@@ -1,0 +1,61 @@
+.description {
+  margin: 18% 0 0 0;
+
+  &__title {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 69px;
+    color: #C2BCD2;
+    max-width: 70%;
+    margin: 0;
+    &_wrap{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__text {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    color: #C2BCD2;
+    max-width: 90%;
+    margin: 0;
+    &_wrap{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin: 8% 0 15% 0;
+    }
+  }
+
+  &__add-text {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 21px;
+    color: #C2BCD2;
+  }
+}
+
+@media(max-width: 1024px) {
+  .description__title {
+    font-size: 48px;
+  }
+}
+@media(max-width: 768px) {
+  .description__title {
+    font-size: 32px;
+    line-height: 34px;
+    max-width: 100%;
+  }
+  .description__text {
+    max-width: 100%;
+  }
+}

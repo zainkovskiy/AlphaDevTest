@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400&family=JetBrains+Mono:wght@200;300;400;500&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-size: 80%, 80%, 100%, 80%, 60%, 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top right, top left, top 22% center, top 10% right, center right, bottom;
+  background-color: #060606;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 9% 1rem 5% 1rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media(max-width: 1024px) {
+  .wrapper {
+    background-position: top right, top left, top 20% center, top 10% right, center right, bottom;
+  }
+}
+@media(max-width: 768px) {
+  .wrapper {
+    background-position: top right, top left, top 10% center, top 5% right, center right, bottom;
+  }
+}
+
+@media(max-width: 480px) {
+  .wrapper {
+    background-position: top right, top left, top 3% center, top 1% right, center right, bottom;
+  }
+}
