@@ -28,7 +28,13 @@
   }
   &__text{
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
     flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 480px) {
+  .footer__text {
+    gap: 2rem;
   }
 }
